@@ -1,93 +1,161 @@
-# Family
+# 🏡 Family Space: Єдиний Координаційний План та Екосистема
 
+> **Мета:** Спільний простір сім'ї для синхронізації цілей, збереження пам'яті роду, взаємної підтримки, енергетичної та фінансової безпеки, а також гармонізації суспільства і чіткого планування будівництва нового дому.
 
+---
 
-## Getting started
+## 🗺️ 1. Загальна мапа репозиторію
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+```mermaid
+graph TD
+    Root["🏡 apps/family (Спільний простір сім'ї)"]
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+    Root --> Hub["📋 Загальна координація та цілі<br/>(README.md)"]
+    Root --> Natalia["🌸 Наталія: Сімʼя, Діти, Порядок<br/>(/Наталія)"]
+    Root --> Yaroslav["🏛️ ЯRаСлав: Стратегія, Рід, Автономія<br/>(/ЯRаСлав)"]
+    Root --> Svitlana["⚡ Світлана: Енергобезпека, Квартира<br/>(/Svitlana)"]
+    Root --> Zhorik["🎬 Жорік: Медіа, Творчість, Влоги<br/>(/zhorik)"]
 
-## Add your files
+    Natalia --> SharedPlan["🌿 Спільний план узгодження<br/>Наталія/plan.md (Консенсус, Дім)"]
 
-* [Create](https://docs.gitlab.com/user/project/repository/web_editor/#create-a-file) or [upload](https://docs.gitlab.com/user/project/repository/web_editor/#upload-a-file) files
-* [Add files using the command line](https://docs.gitlab.com/topics/git/add_files/#add-files-to-a-git-repository) or push an existing Git repository with the following command:
+    Yaroslav --> GeneTree["🌳 Родовідне дерево (7 колін)<br/>family_tree.html, FAMILY_TREE.md"]
+    Yaroslav --> Audios["🎙️ Аудіоспогади та оцифровка<br/>Родословна 1-3 (m4a/txt)"]
+    Yaroslav --> StratPlan["📐 Генеральний стратегічний план<br/>plan.md (Будинок $100k-$500k)"]
 
+    Svitlana --> ElectroPlan["💡 Автономне живлення квартири<br/>autonomous-electrification-plan.md"]
+    Svitlana --> StationChoice["🔋 Вибір зарядної станції LiFePO4<br/>Vtoman / Oukitel + сонце"]
+
+    Zhorik --> VlogSeasons["🐾 Влоги (Сезони 1–3), відеоматеріали"]
+    Zhorik --> ContentEngine["⚙️ Скрипти транскрипції та автоматизації"]
 ```
-cd existing_repo
-git remote add origin https://gitlab.com/Glodov/family.git
-git branch -M main
-git push -uf origin main
+
+---
+
+## 🎯 2. Спільні цілі та синхронізація
+
+Цей документ створений для того, щоб усі учасники сім'ї мали спільну прозору картину: **що ми робимо, для чого, скільки це коштує і в які терміни реалізується**.
+
+```mermaid
+timeline
+    title Дорожня карта ключових етапів
+    section 1. Пам'ять та Рід
+      Збереження спогадів бабусі : Оцифровка аудіо
+      Інтерактивне родовідне дерево : Доступне для всієї родини (Web)
+    section 2. Енергетична безпека & Побут
+      Вибір станції для Світлани : LiFePO4 (котел + холод 6+ год)
+      Монтаж та запуск : Резервне живлення житла
+    section 3. Консенсус та Фінанси
+      Узгодження плану Наталія + Ярослав : Наталія/plan.md
+      Фіналізація комерційних релізів : Industrial Bank, Horod Energy
+    section 4. Новий Дім
+      Базовий автономний дім ($100k) : Земля, контур, сонячна станція
+      Капітальний маєток ($500k) : Повна автономія для дітей та онуків
 ```
 
-## Integrate with your tools
+---
 
-* [Set up project integrations](https://gitlab.com/Glodov/family/-/settings/integrations)
+## 🧭 3. Ключові напрямки та цілі учасників
 
-## Collaborate with your team
+### 3.1. Наталія — Сімʼя, Діти, Порядок
+- **Головна мета:** Збереження теплої родинної атмосфери, спокій та здоровий розвиток дітей, щоденний лад і затишок.
+- **Досьє та плани:** [Наталія/README.md](./Наталія/README.md)
+- **Спільний план із Ярославом:** [Наталія/plan.md](./Наталія/plan.md)
+  1. Синхронізація пріоритетів та потреб сім'ї на 2026 рік.
+  2. Участь у плануванні та облаштуванні майбутнього автономного будинку під потреби дітей.
+  3. Психологічний захист та спокій домашнього простору.
 
-* [Invite team members and collaborators](https://docs.gitlab.com/user/project/members/)
-* [Create a new merge request](https://docs.gitlab.com/user/project/merge_requests/creating_merge_requests/)
-* [Automatically close issues from merge requests](https://docs.gitlab.com/user/project/issues/managing_issues/#closing-issues-automatically)
-* [Enable merge request approvals](https://docs.gitlab.com/user/project/merge_requests/approvals/)
-* [Set auto-merge](https://docs.gitlab.com/user/project/merge_requests/auto_merge/)
+---
 
-## Test and Deploy
+### 3.2. ЯRаСлав — Творення Життя, Будівництво, Автономія та Гармонізація
+- **Головна мета:** Побудова 100% автономного сімейного будинку, захист життя та відновлення справедливості через закон.
+- **Досьє та матеріали:** [ЯRаСлав/README.md](./ЯRаСлав/README.md)
+- **Стратегічні орієнтири:** [ЯRаСлав/plan.md](./ЯRаСлав/plan.md)
+  1. **Фінансовий фундамент:**
+     - Завершення комерційних контрактів (Industrial Bank, модулі живлення Horod Energy).
+     - Подолання блокування рахунків через прямі та альтернативні фінансові потоки.
+  2. **Новий Будинок (Два рівні реалізації):**
+     - **Рівень 1 ($100k):** Базовий автономний дім для швидкого переїзду сім'ї та безпеки дітей.
+     - **Рівень 2 ($500k):** Повноцінний капітальний автономний родовий комплекс.
+  3. **Гармонізація суспільства:**
+     - Не війна, а виправлення помилок: притягнення посадових осіб до відповідальності згідно з Конституцією.
+     - Справжня людяність та консенсус, бо бути людьми вигідно всім.
 
-Use the built-in continuous integration in GitLab.
+---
 
-* [Get started with GitLab CI/CD](https://docs.gitlab.com/ci/quick_start/)
-* [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/user/application_security/sast/)
-* [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/topics/autodevops/requirements/)
-* [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/user/clusters/agent/)
-* [Set up protected environments](https://docs.gitlab.com/ci/environments/protected_environments/)
+### 3.3. Світлана — Енергетичний комфорт та безпека житла
+- **Головна мета:** Надійне тепло та безперебійна робота квартири в умовах можливих відключень світла.
+- **Досьє:** [Svitlana/README.md](./Svitlana/README.md)
+- **План дій:** [Svitlana/autonomous-electrification-plan.md](./Svitlana/autonomous-electrification-plan.md)
+  1. **Резервне живлення для критичних приладів:**
+     - Газовий котел опалення (150 Вт) + холодильник (150 Вт).
+     - Необхідна автономність: від 6 годин (ємність акумулятора від **1 300 – 1 500 Вт·год**).
+  2. **Обране обладнання:**
+     - Пріоритет: станції LiFePO4 з чистим синусом та функцією ДБЖ (**Vtoman FlashSpeed 1500** або **Oukitel P2001E Plus**).
+     - Опція сонячного підживлення: монокристалічна панель 200 Вт на балкон.
+  3. **Бюджет реалізації:**
+     - Базовий (станція + комутація): **~25 000 – 35 000 грн**.
+     - Повний (станція + панель 200 Вт + кріплення + кабель): **~32 000 – 45 000 грн**.
 
-***
+---
 
-# Editing this README
+### 3.4. Жорік — Творчість, Сімейний Архів та Медіа
+- **Головна мета:** Організація сімейних фото/відео та розвиток відеоблогу.
+- **Матеріали та інструкції:** [zhorik/README.md](./zhorik/README.md)
+  - Архів влогів (Сезони 1, 2, 3), матеріали вихідних зйомок.
+  - Автоматизовані конвеєри монтажу та субтитрів.
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+---
 
-## Suggestions for a good README
+## 📊 4. Матриця синхронізації та розподілу бюджету
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+| Напрямок / Проєкт | Відповідальний | Потрібний ресурс / Орієнтовний бюджет | Очікуваний термін / Статус | Результат для сім'ї |
+| :--- | :--- | :--- | :--- | :--- |
+| **Спільний план узгодження** | Наталія + ЯRаСлав | Діалог, консенсус | Зафіксовано в `Наталія/plan.md` | Спільне розуміння кроків, спокій у домі |
+| **Електроживлення квартири Світлани** | Світлана / ЯRаСлав | 27 000 – 40 000 грн | Серпень–вересень 2026 | Теплий дім, працюючий котел і холодильник при відключеннях |
+| **Генеалогічне дерево (v1.0)** | ЯRаСлав | 0 грн (робота з даними) | У процесі (дані зібрані) | Спільне родовідне дерево доступне онлайн для всієї родини |
+| **Запуск комерційних контрактів** | ЯRаСлав | Робочий час | Постійно | Формування накопичень на будівництво |
+| **Базовий Дім ($100k)** | Наталія + ЯRаСлав | ~$100,000 | 2026–2027 | Своя земля, дім для дітей, автономне живлення |
+| **Капітальний Родовий Маєток ($500k)** | Наталія + ЯRаСлав | ~$500,000 | Довгостроковий горизонт | Повна незалежність роду на покоління |
 
-## Name
-Choose a self-explaining name for your project.
+---
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+## 🤝 5. Як використовувати цей простір для узгодження
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+1. **Регулярний огляд:** Документ оновлюється під час зміни планів, вартості чи досягнення проміжних цілей.
+2. **Прозорість фінансів:** Перед великими покупками чи кроками цифри фіксуються тут.
+3. **Консенсус як основа:** Бути людьми та жити в консенсусі вигідно всім. Будь-які рішення обговорюються на основі спільних цінностей.
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+## 📱 6. Технічна Реалізація та Мобільний Доступ
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+Спільний репозиторій розрахований на зручний офлайн- та онлайн-доступ з персональних мобільних пристроїв кожного члена родини:
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+```mermaid
+graph TD
+    Repo["📦 Спільний Git-репозиторій (GitLab)"]
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+    Repo --> NatDev["📱 Наталія (Android)"]
+    Repo --> YarDev["🍏 ЯRаСлав (iPhone / iPad)"]
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+    NatDev --> NatGitLab["🌐 GitLab Web / PWA (Читання та коментарі онлайн)"]
+    NatDev --> NatObsidian["💎 Obsidian + Git (Офлайн база знань із Mermaid)"]
+    NatDev --> NatTermux["⚡ Termux (Опціонально CLI)"]
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+    YarDev --> YarGitLab["🌐 GitLab Web / PWA"]
+    YarDev --> YarObsidian["💎 Obsidian + Git (Офлайн синхронізація)"]
+    YarDev --> YarWorkingCopy["📂 Working Copy (Повноцінний Git-клієнт iOS)"]
+    YarDev --> YarISH["💻 iSH Shell (Alpine Linux термінал: apk add git)"]
+```
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+### Рекомендований набір інструментів:
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+| Платформа / Пристрій | Основний доступ (Читання & Плани) | Офлайн-робота з нотатками | Повноцінний Git / Термінал (CLI) |
+| :--- | :--- | :--- | :--- |
+| **Android (Наталія)** | **GitLab Web / PWA** (простий вхід за посиланням, красивий рендеринг) | **Obsidian** (плагін *Obsidian Git* — автономні плани зі схемами Mermaid) | **MGit** або **Termux** (`pkg install git`) |
+| **iPhone / iPad (ЯRаСлав)** | **GitLab Web / PWA** | **Obsidian** (повна база знань на iPad/iPhone) | **Working Copy** (еталонний Git-клієнт iOS) + **iSH Shell** (консоль Linux) |
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+---
 
-## License
-For open source projects, say how it is licensed.
+## 📜 7. Архів та Історія Роду (Глодов — Мироненко — Жирови)
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+> Повний текст родоводу та спогадів Людмили Мироненко винесено в окремий розділ спадщини: [HISTORY.md](./HISTORY.md) та інтерактивне дерево [FAMILY_TREE.md](./ЯRаСлав/FAMILY_TREE.md).
+

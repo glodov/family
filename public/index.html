@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Родовід — Жирови — Глодови — Масюки</title>
+	<style>
+		body {
+			font-family: 'Segoe UI', sans-serif;
+			background: #f8f9fa;
+			color: #333;
+			padding: 20px;
+		}
+
+		.tree {
+			position: relative;
+			padding: 20px 0 0 30px;
+			list-style: none;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		.tree li {
+			margin: 10px 0;
+			position: relative;
+			padding-left: 20px;
+		}
+
+		.tree li::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 15px;
+			width: 15px;
+			height: 0;
+			border-top: 2px solid #007acc;
+		}
+
+		.tree li::after {
+			content: "";
+			position: absolute;
+			left: 15px;
+			top: 0;
+			width: 0;
+			height: 100%;
+			border-left: 2px solid #007acc;
+		}
+
+		.tree li:last-child::after {
+			height: 15px;
+		}
+
+		.tree li::before {
+			border-top: 2px solid #007acc;
+		}
+
+		.tree>li::after {
+			height: 0;
+		}
+
+		.tree span {
+			padding: 6px 12px;
+			background: #fff;
+			border: 2px solid #007acc;
+			border-radius: 8px;
+			display: inline-block;
+			cursor: pointer;
+			font-size: 14px;
+			transition: 0.2s;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+		}
+
+		.tree span:hover {
+			background: #e3f2fd;
+			transform: scale(1.05);
+		}
+
+		.tree ul {
+			display: none;
+			margin: 0;
+			padding-left: 40px;
+		}
+
+		.tree li.open>ul {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.tree span::after {
+			content: " ⬇️";
+			font-size: 10px;
+		}
+
+		.tree li.open>span::after {
+			content: " ⬆️";
+		}
+
+		h1 {
+			text-align: center;
+			color: #1565c0;
+		}
+
+		.note {
+			font-size: 12px;
+			color: #666;
+			font-style: italic;
+			margin-top: 5px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Родовід — Жирови — Глодови — Масюки</h1>
+	<ul class="tree">
+		<li>
+			<span>Афанасій О. Жиров (1887–1953) + Марія І. Бахтіна (1903–?)</span>
+			<ul>
+				<li>
+					<span>Шура Жирова</span>
+					<ul>
+						<li>
+							<span>Олександр Глодов</span>
+							<ul>
+								<li><span>Ти</span></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<span>Ніна Жирова (1926–1999) + Дмитро Шамонін (Герой СРСР)</span>
+					<ul>
+						<li><span>Зоя Шамоніна (1949, Красноярськ)</span></li>
+						<li><span>Тамара Шамоніна (1951, діти)</span></li>
+						<li><span>Віктор Шамонін (1952, Каменськ-Уральський)</span></li>
+						<li><span>Володимир Шамонін (1956, Тула, двоє дітей)</span></li>
+					</ul>
+				</li>
+				<li>
+					<span>Валентина Жирова (1932–1991) + Михайло Хоменський (прораб)</span>
+					<ul>
+						<li>
+							<span>Віктор Хоменський (1953, Єкатеринбург, бізнес)</span>
+							<ul>
+								<li><span>Настя</span></li>
+								<li><span>Аліна</span></li>
+							</ul>
+						</li>
+						<li><span>Анатолій Хоменський (1968, США)</span></li>
+					</ul>
+				</li>
+				<li>
+					<span>Анатолій Жиров (1938–2009) + Людмила Маркова (1941–2020)</span>
+					<ul>
+						<li>
+							<span>Олексій Жиров (1974, Москва)</span>
+							<ul>
+								<li><span>Дитина?</span></li>
+								<li><span>Юлія (падчерка)</span></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<span>Ірина Жирова (1941–2021) + Юрій Єрмаков (1939–?, інженер)</span>
+					<ul>
+						<li><span>Еліна Єрмакова (1964, юрист)</span></li>
+						<li>
+							<span>Світлана Єрмакова (1975, стоматолог)</span>
+							<ul>
+								<li><span>Ігор</span></li>
+								<li><span>Марина</span></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<span>Людмила Жирова (1946–2020) + Валерій Масюк (1948–2015, рентгенолог)</span>
+					<ul>
+						<li><span>Алена Масюк (1972, проблеми зі здоров’ям)</span></li>
+						<li>
+							<span>Даниїл Масюк (1993, США, архітектор)</span>
+							<ul>
+								<li><span class="note">Вихований дідом і бабусею. Працює в Нью-Йорку.</span></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+	<script>
+		document.querySelectorAll('span').forEach(span => {
+			span.addEventListener('click', function (e) {
+				e.stopPropagation();
+				const li = this.parentElement;
+				li.classList.toggle('open');
+			});
+		});
+	</script>
+</body>
+
+</html>

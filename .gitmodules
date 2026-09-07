@@ -1,0 +1,3 @@
+[submodule "zhorik"]
+	path = zhorik
+	url = git@gitlab-glodov:Glodov/zhorik.git

@@ -1,0 +1,9 @@
+.llimo/
+.DS_Store
+**/media/
+**/tmp/
+*.m4a
+*.mp3
+*.mp4
+*.mov
+*.wav

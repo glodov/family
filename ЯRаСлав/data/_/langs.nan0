@@ -1,0 +1,12 @@
+{
+  "en": {
+    "appName": "Cerebras",
+    "welcome": "Welcome to Cerebras!",
+    "description": "A high‑performance AI model serving platform."
+  },
+  "uk": {
+    "appName": "Cerebras",
+    "welcome": "Ласкаво просимо до Cerebras!",
+    "description": "Платформа для високопродуктивного сервісу AI‑моделей."
+  }
+}
